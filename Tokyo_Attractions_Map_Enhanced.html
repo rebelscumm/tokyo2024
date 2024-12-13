@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8278ce555d5cb1aae9826f9dd417574d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8278ce555d5cb1aae9826f9dd417574d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8278ce555d5cb1aae9826f9dd417574d = L.map(
+                "map_8278ce555d5cb1aae9826f9dd417574d",
+                {
+                    center: [35.6895, 139.6917],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68948ebbc850fff45ef16c522332a7cb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var marker_61ebbd13b808f38be2f03daaeefbbc40 = L.marker(
+                [35.6264, 139.7766],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_29b7f045902d84cff95e1c170b9245b7 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e1\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_61ebbd13b808f38be2f03daaeefbbc40.setIcon(div_icon_29b7f045902d84cff95e1c170b9245b7);
+        
+    
+        var popup_72e4e15ce71322b8e3829d2ae2fd3a85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cef21bd75389d0fa56d24ead2656a57 = $(`<div id="html_0cef21bd75389d0fa56d24ead2656a57" style="width: 100.0%; height: 100.0%;">1. teamLab Borderless</div>`)[0];
+            popup_72e4e15ce71322b8e3829d2ae2fd3a85.setContent(html_0cef21bd75389d0fa56d24ead2656a57);
+        
+
+        marker_61ebbd13b808f38be2f03daaeefbbc40.bindPopup(popup_72e4e15ce71322b8e3829d2ae2fd3a85)
+        ;
+
+        
+    
+    
+            marker_61ebbd13b808f38be2f03daaeefbbc40.bindTooltip(
+                `<div>
+                     1. teamLab Borderless - Immersive digital art museum with stunning exhibits.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cca5b4d0d66ee9c614bab3ca4055e1fd = L.marker(
+                [35.7156, 139.7741],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_99cc3207e541f3823fe921bdc553f4fc = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e2\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_cca5b4d0d66ee9c614bab3ca4055e1fd.setIcon(div_icon_99cc3207e541f3823fe921bdc553f4fc);
+        
+    
+        var popup_6b1a4570722c515362fc9eef883d83db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7397a143ae2a47c1a88b50f61eb76dc = $(`<div id="html_f7397a143ae2a47c1a88b50f61eb76dc" style="width: 100.0%; height: 100.0%;">2. Ueno Park and Zoo</div>`)[0];
+            popup_6b1a4570722c515362fc9eef883d83db.setContent(html_f7397a143ae2a47c1a88b50f61eb76dc);
+        
+
+        marker_cca5b4d0d66ee9c614bab3ca4055e1fd.bindPopup(popup_6b1a4570722c515362fc9eef883d83db)
+        ;
+
+        
+    
+    
+            marker_cca5b4d0d66ee9c614bab3ca4055e1fd.bindTooltip(
+                `<div>
+                     2. Ueno Park and Zoo - Expansive park with museums and Japan’s oldest zoo.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04ab3492f48490d959d2139f6ac4f31c = L.marker(
+                [35.6655, 139.7707],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_0a2c2556a0505fa3356b91815651792b = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e3\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_04ab3492f48490d959d2139f6ac4f31c.setIcon(div_icon_0a2c2556a0505fa3356b91815651792b);
+        
+    
+        var popup_010212a3d9821d272b6b6d793e1401ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23af6371cab88e5cb3ad91cfda6c5d9a = $(`<div id="html_23af6371cab88e5cb3ad91cfda6c5d9a" style="width: 100.0%; height: 100.0%;">3. Tsukiji Outer Market</div>`)[0];
+            popup_010212a3d9821d272b6b6d793e1401ba.setContent(html_23af6371cab88e5cb3ad91cfda6c5d9a);
+        
+
+        marker_04ab3492f48490d959d2139f6ac4f31c.bindPopup(popup_010212a3d9821d272b6b6d793e1401ba)
+        ;
+
+        
+    
+    
+            marker_04ab3492f48490d959d2139f6ac4f31c.bindTooltip(
+                `<div>
+                     3. Tsukiji Outer Market - Vibrant seafood market and street food haven.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_230f7b41c3c7ffb663b999356c7f8396 = L.marker(
+                [35.6938, 139.7007],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_a18b6a788c8ee0cb52ed0e497b81a621 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e4\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_230f7b41c3c7ffb663b999356c7f8396.setIcon(div_icon_a18b6a788c8ee0cb52ed0e497b81a621);
+        
+    
+        var popup_dadd8c0c7a4249902b508ddb6f80e1cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a28bc3fd068cc3639498fa8ade5055b7 = $(`<div id="html_a28bc3fd068cc3639498fa8ade5055b7" style="width: 100.0%; height: 100.0%;">4. Omoide Yokocho (Memory Lane)</div>`)[0];
+            popup_dadd8c0c7a4249902b508ddb6f80e1cc.setContent(html_a28bc3fd068cc3639498fa8ade5055b7);
+        
+
+        marker_230f7b41c3c7ffb663b999356c7f8396.bindPopup(popup_dadd8c0c7a4249902b508ddb6f80e1cc)
+        ;
+
+        
+    
+    
+            marker_230f7b41c3c7ffb663b999356c7f8396.bindTooltip(
+                `<div>
+                     4. Omoide Yokocho (Memory Lane) - Alley of tiny eateries with classic Japanese vibes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eea2af3c27f13fd629629a2315beace3 = L.marker(
+                [35.7101, 139.8107],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_3877582d527d70683da223b3a5973130 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e5\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_eea2af3c27f13fd629629a2315beace3.setIcon(div_icon_3877582d527d70683da223b3a5973130);
+        
+    
+        var popup_0ea35a0ab61c9cc247a67e73cee7a34f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e6cd0cb15c8c102700380885fc02670 = $(`<div id="html_2e6cd0cb15c8c102700380885fc02670" style="width: 100.0%; height: 100.0%;">5. Tokyo Skytree</div>`)[0];
+            popup_0ea35a0ab61c9cc247a67e73cee7a34f.setContent(html_2e6cd0cb15c8c102700380885fc02670);
+        
+
+        marker_eea2af3c27f13fd629629a2315beace3.bindPopup(popup_0ea35a0ab61c9cc247a67e73cee7a34f)
+        ;
+
+        
+    
+    
+            marker_eea2af3c27f13fd629629a2315beace3.bindTooltip(
+                `<div>
+                     5. Tokyo Skytree - Tallest structure in Japan with panoramic city views.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc4b29e2735aa9b61800b0d62ba88f8 = L.marker(
+                [35.6595, 139.7005],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_adcb8e6f5f036c424bd7a7f5454df060 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e6\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_4fc4b29e2735aa9b61800b0d62ba88f8.setIcon(div_icon_adcb8e6f5f036c424bd7a7f5454df060);
+        
+    
+        var popup_115a364cf6e27fb28a8d7d066605ed05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_044368b79ae66b31cdf9112770ce30f4 = $(`<div id="html_044368b79ae66b31cdf9112770ce30f4" style="width: 100.0%; height: 100.0%;">6. Shibuya Crossing</div>`)[0];
+            popup_115a364cf6e27fb28a8d7d066605ed05.setContent(html_044368b79ae66b31cdf9112770ce30f4);
+        
+
+        marker_4fc4b29e2735aa9b61800b0d62ba88f8.bindPopup(popup_115a364cf6e27fb28a8d7d066605ed05)
+        ;
+
+        
+    
+    
+            marker_4fc4b29e2735aa9b61800b0d62ba88f8.bindTooltip(
+                `<div>
+                     6. Shibuya Crossing - Famous bustling intersection, a symbol of Tokyo’s energy.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3de1c70f1504ba1e6e4ab21e9806df26 = L.marker(
+                [35.6703, 139.7029],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_cd12319322199c9671b3e382e3ebb2af = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e7\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_3de1c70f1504ba1e6e4ab21e9806df26.setIcon(div_icon_cd12319322199c9671b3e382e3ebb2af);
+        
+    
+        var popup_adbb48ea3e9bb3b006704460cb8cc2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fc0f7e785ad4be90853ac346dad5e40 = $(`<div id="html_6fc0f7e785ad4be90853ac346dad5e40" style="width: 100.0%; height: 100.0%;">7. Harajuku (Takeshita Street)</div>`)[0];
+            popup_adbb48ea3e9bb3b006704460cb8cc2a0.setContent(html_6fc0f7e785ad4be90853ac346dad5e40);
+        
+
+        marker_3de1c70f1504ba1e6e4ab21e9806df26.bindPopup(popup_adbb48ea3e9bb3b006704460cb8cc2a0)
+        ;
+
+        
+    
+    
+            marker_3de1c70f1504ba1e6e4ab21e9806df26.bindTooltip(
+                `<div>
+                     7. Harajuku (Takeshita Street) - Youth culture hub with quirky shops and cafes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9a6937695bdd664d1b582e43b77a48b = L.marker(
+                [35.6604, 139.7293],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_42c5260dc9786ff1a5f17ad8aa5db47d = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e8\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_b9a6937695bdd664d1b582e43b77a48b.setIcon(div_icon_42c5260dc9786ff1a5f17ad8aa5db47d);
+        
+    
+        var popup_fa33731b93cc93e4b2b7232215388bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b7db3fae359d318010102651d1d4fe7 = $(`<div id="html_4b7db3fae359d318010102651d1d4fe7" style="width: 100.0%; height: 100.0%;">8. Roppongi Hills</div>`)[0];
+            popup_fa33731b93cc93e4b2b7232215388bc0.setContent(html_4b7db3fae359d318010102651d1d4fe7);
+        
+
+        marker_b9a6937695bdd664d1b582e43b77a48b.bindPopup(popup_fa33731b93cc93e4b2b7232215388bc0)
+        ;
+
+        
+    
+    
+            marker_b9a6937695bdd664d1b582e43b77a48b.bindTooltip(
+                `<div>
+                     8. Roppongi Hills - Upscale area with art museums, shops, and cityscapes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ef0f05372641e0acaf9a4b05e6362e4 = L.marker(
+                [35.6264, 139.8854],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_762b30deac54e08482c7c335cc349223 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e9\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_7ef0f05372641e0acaf9a4b05e6362e4.setIcon(div_icon_762b30deac54e08482c7c335cc349223);
+        
+    
+        var popup_0fe5dd2380b7e73a4db79897050864b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c057e9686b5bcdc7f2a3e0816618593 = $(`<div id="html_2c057e9686b5bcdc7f2a3e0816618593" style="width: 100.0%; height: 100.0%;">9. Tokyo DisneySea</div>`)[0];
+            popup_0fe5dd2380b7e73a4db79897050864b2.setContent(html_2c057e9686b5bcdc7f2a3e0816618593);
+        
+
+        marker_7ef0f05372641e0acaf9a4b05e6362e4.bindPopup(popup_0fe5dd2380b7e73a4db79897050864b2)
+        ;
+
+        
+    
+    
+            marker_7ef0f05372641e0acaf9a4b05e6362e4.bindTooltip(
+                `<div>
+                     9. Tokyo DisneySea - Unique ocean-themed Disney park with thrilling rides.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50b77bfe4aaa0355ebab48d9e900ff9d = L.marker(
+                [35.7103, 139.8105],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_e6cda89be3a14c3eeed680a2aa6c1ec3 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e10\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_50b77bfe4aaa0355ebab48d9e900ff9d.setIcon(div_icon_e6cda89be3a14c3eeed680a2aa6c1ec3);
+        
+    
+        var popup_5f9bc7783dfafbd58e079cb338638095 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6edd867612ab02fc5eb62c7cd208587 = $(`<div id="html_d6edd867612ab02fc5eb62c7cd208587" style="width: 100.0%; height: 100.0%;">10. Sumida Aquarium</div>`)[0];
+            popup_5f9bc7783dfafbd58e079cb338638095.setContent(html_d6edd867612ab02fc5eb62c7cd208587);
+        
+
+        marker_50b77bfe4aaa0355ebab48d9e900ff9d.bindPopup(popup_5f9bc7783dfafbd58e079cb338638095)
+        ;
+
+        
+    
+    
+            marker_50b77bfe4aaa0355ebab48d9e900ff9d.bindTooltip(
+                `<div>
+                     10. Sumida Aquarium - Modern aquarium showcasing marine life near Tokyo Skytree.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97036bc5bdb6b3211080c13793b80078 = L.marker(
+                [35.6329, 139.8804],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_1ecf7f1f00825f28258fc88ef9e28102 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e11\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_97036bc5bdb6b3211080c13793b80078.setIcon(div_icon_1ecf7f1f00825f28258fc88ef9e28102);
+        
+    
+        var popup_e39db04539f7bdb136cbcb2cc211fe4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3acfce8c68b9c79e8832ec69f38a6a2 = $(`<div id="html_a3acfce8c68b9c79e8832ec69f38a6a2" style="width: 100.0%; height: 100.0%;">11. Tokyo Disneyland</div>`)[0];
+            popup_e39db04539f7bdb136cbcb2cc211fe4c.setContent(html_a3acfce8c68b9c79e8832ec69f38a6a2);
+        
+
+        marker_97036bc5bdb6b3211080c13793b80078.bindPopup(popup_e39db04539f7bdb136cbcb2cc211fe4c)
+        ;
+
+        
+    
+    
+            marker_97036bc5bdb6b3211080c13793b80078.bindTooltip(
+                `<div>
+                     11. Tokyo Disneyland - World-renowned theme park featuring Disney attractions.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df22ff54d46fdd26f161dd03be0ddd1e = L.marker(
+                [35.6193, 139.7763],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_2f95a4698dc322e8943cfcf02fa21998 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e12\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_df22ff54d46fdd26f161dd03be0ddd1e.setIcon(div_icon_2f95a4698dc322e8943cfcf02fa21998);
+        
+    
+        var popup_f951a9092cbdad666b1a68cd8b015cc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b49c66a0fd7e16c128ff13c72b52110 = $(`<div id="html_1b49c66a0fd7e16c128ff13c72b52110" style="width: 100.0%; height: 100.0%;">12. Odaiba</div>`)[0];
+            popup_f951a9092cbdad666b1a68cd8b015cc6.setContent(html_1b49c66a0fd7e16c128ff13c72b52110);
+        
+
+        marker_df22ff54d46fdd26f161dd03be0ddd1e.bindPopup(popup_f951a9092cbdad666b1a68cd8b015cc6)
+        ;
+
+        
+    
+    
+            marker_df22ff54d46fdd26f161dd03be0ddd1e.bindTooltip(
+                `<div>
+                     12. Odaiba - Futuristic island with shopping malls and a giant Gundam statue.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66ebff2cb41861fb81feba2a00e2b9de = L.marker(
+                [35.6467, 139.7102],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_b9038cece26136ab5c74cbcacb844ec4 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e13\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_66ebff2cb41861fb81feba2a00e2b9de.setIcon(div_icon_b9038cece26136ab5c74cbcacb844ec4);
+        
+    
+        var popup_ceab9af05d5873addb110a3b96cef671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d6e0802391509987cfdfec674fcd08d = $(`<div id="html_9d6e0802391509987cfdfec674fcd08d" style="width: 100.0%; height: 100.0%;">13. Ebisu Yokocho</div>`)[0];
+            popup_ceab9af05d5873addb110a3b96cef671.setContent(html_9d6e0802391509987cfdfec674fcd08d);
+        
+
+        marker_66ebff2cb41861fb81feba2a00e2b9de.bindPopup(popup_ceab9af05d5873addb110a3b96cef671)
+        ;
+
+        
+    
+    
+            marker_66ebff2cb41861fb81feba2a00e2b9de.bindTooltip(
+                `<div>
+                     13. Ebisu Yokocho - Narrow alleys filled with cozy bars and authentic eateries.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d54243c407d8fde292b3f19551106e0e = L.marker(
+                [36.6513, 138.181],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_462bd0212de7835108d4dc0dc08f2e95 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e14\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_d54243c407d8fde292b3f19551106e0e.setIcon(div_icon_462bd0212de7835108d4dc0dc08f2e95);
+        
+    
+        var popup_ee5929a87b929c9179b02a4cb1c4f14f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd2a340dfe48cd7498b8a32d7f1edba4 = $(`<div id="html_bd2a340dfe48cd7498b8a32d7f1edba4" style="width: 100.0%; height: 100.0%;">14. Nagano Prefecture</div>`)[0];
+            popup_ee5929a87b929c9179b02a4cb1c4f14f.setContent(html_bd2a340dfe48cd7498b8a32d7f1edba4);
+        
+
+        marker_d54243c407d8fde292b3f19551106e0e.bindPopup(popup_ee5929a87b929c9179b02a4cb1c4f14f)
+        ;
+
+        
+    
+    
+            marker_d54243c407d8fde292b3f19551106e0e.bindTooltip(
+                `<div>
+                     14. Nagano Prefecture - Known for winter sports, hot springs, and the Japanese Alps.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc6b2b743d215fa7c5743342ef8e7b77 = L.marker(
+                [35.6825, 139.7527],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_a13d347f2e6f5f9bda77c34f69e907fe = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e15\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_cc6b2b743d215fa7c5743342ef8e7b77.setIcon(div_icon_a13d347f2e6f5f9bda77c34f69e907fe);
+        
+    
+        var popup_7a8d8ba6ca2fd4417b8bd242eb535411 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e3ce0990f875577ca227428e236283b = $(`<div id="html_4e3ce0990f875577ca227428e236283b" style="width: 100.0%; height: 100.0%;">15. Imperial Palace</div>`)[0];
+            popup_7a8d8ba6ca2fd4417b8bd242eb535411.setContent(html_4e3ce0990f875577ca227428e236283b);
+        
+
+        marker_cc6b2b743d215fa7c5743342ef8e7b77.bindPopup(popup_7a8d8ba6ca2fd4417b8bd242eb535411)
+        ;
+
+        
+    
+    
+            marker_cc6b2b743d215fa7c5743342ef8e7b77.bindTooltip(
+                `<div>
+                     15. Imperial Palace - Residence of the Emperor surrounded by beautiful gardens.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5204aaa9510b2f9f61e51aa62927ab2c = L.marker(
+                [35.6717, 139.765],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_407a5a101d973e09dc4529885b01be17 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e16\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_5204aaa9510b2f9f61e51aa62927ab2c.setIcon(div_icon_407a5a101d973e09dc4529885b01be17);
+        
+    
+        var popup_3c7a602abfcddeb5f4702fe056b329f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3115c1fc2bac5c6cbe15df564e8cea1d = $(`<div id="html_3115c1fc2bac5c6cbe15df564e8cea1d" style="width: 100.0%; height: 100.0%;">16. Ginza Shopping District</div>`)[0];
+            popup_3c7a602abfcddeb5f4702fe056b329f3.setContent(html_3115c1fc2bac5c6cbe15df564e8cea1d);
+        
+
+        marker_5204aaa9510b2f9f61e51aa62927ab2c.bindPopup(popup_3c7a602abfcddeb5f4702fe056b329f3)
+        ;
+
+        
+    
+    
+            marker_5204aaa9510b2f9f61e51aa62927ab2c.bindTooltip(
+                `<div>
+                     16. Ginza Shopping District - Luxury shopping and fine dining hotspot.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d9e24e584638e30baf5c39331f0ac9d = L.marker(
+                [35.6963, 139.7022],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_9b8cc4c7d50ebf963334198291df3187 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e17\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_5d9e24e584638e30baf5c39331f0ac9d.setIcon(div_icon_9b8cc4c7d50ebf963334198291df3187);
+        
+    
+        var popup_40b2fd75b033573f010105d0f8b484e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e5ef3bd76b9a450ce4facbb6609fca0 = $(`<div id="html_3e5ef3bd76b9a450ce4facbb6609fca0" style="width: 100.0%; height: 100.0%;">17. Kabukicho</div>`)[0];
+            popup_40b2fd75b033573f010105d0f8b484e3.setContent(html_3e5ef3bd76b9a450ce4facbb6609fca0);
+        
+
+        marker_5d9e24e584638e30baf5c39331f0ac9d.bindPopup(popup_40b2fd75b033573f010105d0f8b484e3)
+        ;
+
+        
+    
+    
+            marker_5d9e24e584638e30baf5c39331f0ac9d.bindTooltip(
+                `<div>
+                     17. Kabukicho - Tokyo’s entertainment district with nightlife and themed restaurants.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b60c767c522766c7ccfebf73a0df666b = L.marker(
+                [35.6586, 139.7454],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_b456416921dbabc0051dd6e42b3029c7 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e18\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_b60c767c522766c7ccfebf73a0df666b.setIcon(div_icon_b456416921dbabc0051dd6e42b3029c7);
+        
+    
+        var popup_35efa2b73b8efd1a9a2112ee81832292 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aed326a81e8e1dc589e22b17e16bc78e = $(`<div id="html_aed326a81e8e1dc589e22b17e16bc78e" style="width: 100.0%; height: 100.0%;">18. Tokyo Tower</div>`)[0];
+            popup_35efa2b73b8efd1a9a2112ee81832292.setContent(html_aed326a81e8e1dc589e22b17e16bc78e);
+        
+
+        marker_b60c767c522766c7ccfebf73a0df666b.bindPopup(popup_35efa2b73b8efd1a9a2112ee81832292)
+        ;
+
+        
+    
+    
+            marker_b60c767c522766c7ccfebf73a0df666b.bindTooltip(
+                `<div>
+                     18. Tokyo Tower - Iconic red tower with observation decks and stunning city views.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_884f3c2ec679f171765769f1738a3622 = L.marker(
+                [35.7288, 139.7708],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_b392326739d98bbfca7eaf20fa23b048 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e19\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_884f3c2ec679f171765769f1738a3622.setIcon(div_icon_b392326739d98bbfca7eaf20fa23b048);
+        
+    
+        var popup_0340baa8506be8098a67356f60be39d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ffffbf1ff6b40fcf2492dbc623d3f72 = $(`<div id="html_3ffffbf1ff6b40fcf2492dbc623d3f72" style="width: 100.0%; height: 100.0%;">19. Yanaka Ginza</div>`)[0];
+            popup_0340baa8506be8098a67356f60be39d5.setContent(html_3ffffbf1ff6b40fcf2492dbc623d3f72);
+        
+
+        marker_884f3c2ec679f171765769f1738a3622.bindPopup(popup_0340baa8506be8098a67356f60be39d5)
+        ;
+
+        
+    
+    
+            marker_884f3c2ec679f171765769f1738a3622.bindTooltip(
+                `<div>
+                     19. Yanaka Ginza - Retro shopping street offering traditional snacks and goods.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8e5edcb199ee13cb227ca0b845d10f9 = L.marker(
+                [35.6983, 139.7731],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_eaa371b1e29bd8345d9c7acce419846c = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e20\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_e8e5edcb199ee13cb227ca0b845d10f9.setIcon(div_icon_eaa371b1e29bd8345d9c7acce419846c);
+        
+    
+        var popup_7e879df308d4ef6c4766d872d413c2a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8bf92ff44088030b9fd12b945c3f072 = $(`<div id="html_d8bf92ff44088030b9fd12b945c3f072" style="width: 100.0%; height: 100.0%;">20. Akihabara</div>`)[0];
+            popup_7e879df308d4ef6c4766d872d413c2a8.setContent(html_d8bf92ff44088030b9fd12b945c3f072);
+        
+
+        marker_e8e5edcb199ee13cb227ca0b845d10f9.bindPopup(popup_7e879df308d4ef6c4766d872d413c2a8)
+        ;
+
+        
+    
+    
+            marker_e8e5edcb199ee13cb227ca0b845d10f9.bindTooltip(
+                `<div>
+                     20. Akihabara - Electronics and anime district, paradise for otaku culture.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b32a4c98ab73752210cab24df8fcc7d = L.marker(
+                [35.6852, 139.7101],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_ddb1aca63fda5fd84d994b9622233daa = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e21\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_0b32a4c98ab73752210cab24df8fcc7d.setIcon(div_icon_ddb1aca63fda5fd84d994b9622233daa);
+        
+    
+        var popup_a386c0b7a4aadd1c7f75d8d8efb79d92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4131965359d0374e7acfc6a5f62c876 = $(`<div id="html_a4131965359d0374e7acfc6a5f62c876" style="width: 100.0%; height: 100.0%;">21. Shinjuku Gyoen National Garden</div>`)[0];
+            popup_a386c0b7a4aadd1c7f75d8d8efb79d92.setContent(html_a4131965359d0374e7acfc6a5f62c876);
+        
+
+        marker_0b32a4c98ab73752210cab24df8fcc7d.bindPopup(popup_a386c0b7a4aadd1c7f75d8d8efb79d92)
+        ;
+
+        
+    
+    
+            marker_0b32a4c98ab73752210cab24df8fcc7d.bindTooltip(
+                `<div>
+                     21. Shinjuku Gyoen National Garden - A peaceful escape with beautiful gardens.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0db0b871158a863abafb04e3945d8bea = L.marker(
+                [35.6764, 139.6993],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_aae0d2ffbbf5feb33a66bed7e4affeea = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e22\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_0db0b871158a863abafb04e3945d8bea.setIcon(div_icon_aae0d2ffbbf5feb33a66bed7e4affeea);
+        
+    
+        var popup_a3283503ca6eeca9be9893812df8c19e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5e7044a89e00e433de924e79b66964 = $(`<div id="html_1c5e7044a89e00e433de924e79b66964" style="width: 100.0%; height: 100.0%;">22. Meiji Shrine</div>`)[0];
+            popup_a3283503ca6eeca9be9893812df8c19e.setContent(html_1c5e7044a89e00e433de924e79b66964);
+        
+
+        marker_0db0b871158a863abafb04e3945d8bea.bindPopup(popup_a3283503ca6eeca9be9893812df8c19e)
+        ;
+
+        
+    
+    
+            marker_0db0b871158a863abafb04e3945d8bea.bindTooltip(
+                `<div>
+                     22. Meiji Shrine - Serene Shinto shrine surrounded by a forested park.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9980f227874c589e8a936381d374235f = L.marker(
+                [35.6967, 139.7936],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_67bf79524e2cd219ed22fcffe43828b5 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e23\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_9980f227874c589e8a936381d374235f.setIcon(div_icon_67bf79524e2cd219ed22fcffe43828b5);
+        
+    
+        var popup_75316c9d7e55a79c974efef250a002d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e35735c759545752ad1be48f4d28a6a = $(`<div id="html_0e35735c759545752ad1be48f4d28a6a" style="width: 100.0%; height: 100.0%;">23. Ryogoku Kokugikan</div>`)[0];
+            popup_75316c9d7e55a79c974efef250a002d0.setContent(html_0e35735c759545752ad1be48f4d28a6a);
+        
+
+        marker_9980f227874c589e8a936381d374235f.bindPopup(popup_75316c9d7e55a79c974efef250a002d0)
+        ;
+
+        
+    
+    
+            marker_9980f227874c589e8a936381d374235f.bindTooltip(
+                `<div>
+                     23. Ryogoku Kokugikan - Japan’s national sumo stadium with tournaments and exhibits.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f2869cd15bc90e71f6418635ed70cfc = L.marker(
+                [35.7148, 139.7967],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_5cb49015ccc921f7b0a1d2ceacfc2969 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e24\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_9f2869cd15bc90e71f6418635ed70cfc.setIcon(div_icon_5cb49015ccc921f7b0a1d2ceacfc2969);
+        
+    
+        var popup_a0167238427713b8bd24e894e2fc930b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_deb41a7fdf0f7737da5f0f1e44e27778 = $(`<div id="html_deb41a7fdf0f7737da5f0f1e44e27778" style="width: 100.0%; height: 100.0%;">24. Asakusa (Senso-ji Temple)</div>`)[0];
+            popup_a0167238427713b8bd24e894e2fc930b.setContent(html_deb41a7fdf0f7737da5f0f1e44e27778);
+        
+
+        marker_9f2869cd15bc90e71f6418635ed70cfc.bindPopup(popup_a0167238427713b8bd24e894e2fc930b)
+        ;
+
+        
+    
+    
+            marker_9f2869cd15bc90e71f6418635ed70cfc.bindTooltip(
+                `<div>
+                     24. Asakusa (Senso-ji Temple) - Historic Buddhist temple in a traditional district.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cfd2ecee10bcd81588fa85bc874f2b3 = L.marker(
+                [35.7169, 139.7767],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_90ba4a85d9f55bcb22529a7b2f485c2b = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e25\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_1cfd2ecee10bcd81588fa85bc874f2b3.setIcon(div_icon_90ba4a85d9f55bcb22529a7b2f485c2b);
+        
+    
+        var popup_294692c74f6f19b089e981556f0fa0d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1cefa82092d1a8b9933bf9d5e575c60 = $(`<div id="html_a1cefa82092d1a8b9933bf9d5e575c60" style="width: 100.0%; height: 100.0%;">25. National Museum of Nature and Science</div>`)[0];
+            popup_294692c74f6f19b089e981556f0fa0d7.setContent(html_a1cefa82092d1a8b9933bf9d5e575c60);
+        
+
+        marker_1cfd2ecee10bcd81588fa85bc874f2b3.bindPopup(popup_294692c74f6f19b089e981556f0fa0d7)
+        ;
+
+        
+    
+    
+            marker_1cfd2ecee10bcd81588fa85bc874f2b3.bindTooltip(
+                `<div>
+                     25. National Museum of Nature and Science - Interactive museum on Japan’s natural history.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcdc37a3dada632b7db24f57cf78bad3 = L.marker(
+                [36.3148, 139.5384],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_1578c3a70417d3ee177a243db9978069 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e26\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_dcdc37a3dada632b7db24f57cf78bad3.setIcon(div_icon_1578c3a70417d3ee177a243db9978069);
+        
+    
+        var popup_b9bf7f016bdd613f0ea7129bf5017cc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21998695e3ff2d813f7541f8f0f8173b = $(`<div id="html_21998695e3ff2d813f7541f8f0f8173b" style="width: 100.0%; height: 100.0%;">26. Ashikaga Flower Park (Tochigi)</div>`)[0];
+            popup_b9bf7f016bdd613f0ea7129bf5017cc0.setContent(html_21998695e3ff2d813f7541f8f0f8173b);
+        
+
+        marker_dcdc37a3dada632b7db24f57cf78bad3.bindPopup(popup_b9bf7f016bdd613f0ea7129bf5017cc0)
+        ;
+
+        
+    
+    
+            marker_dcdc37a3dada632b7db24f57cf78bad3.bindTooltip(
+                `<div>
+                     26. Ashikaga Flower Park (Tochigi) - Famous for seasonal flowers, especially wisteria.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f87fd27756c5d58b48ee6ad5bda0ec0 = L.marker(
+                [35.0394, 135.7292],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_699273397e90a8e7d28b96bc32fca756 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: blue; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e27\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_1f87fd27756c5d58b48ee6ad5bda0ec0.setIcon(div_icon_699273397e90a8e7d28b96bc32fca756);
+        
+    
+        var popup_111314be2a91c37fc2335ff60c3b4940 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbaa2742ac0c9360c1b393b7a74edc2a = $(`<div id="html_dbaa2742ac0c9360c1b393b7a74edc2a" style="width: 100.0%; height: 100.0%;">27. Ryuonji Temple (Kyoto)</div>`)[0];
+            popup_111314be2a91c37fc2335ff60c3b4940.setContent(html_dbaa2742ac0c9360c1b393b7a74edc2a);
+        
+
+        marker_1f87fd27756c5d58b48ee6ad5bda0ec0.bindPopup(popup_111314be2a91c37fc2335ff60c3b4940)
+        ;
+
+        
+    
+    
+            marker_1f87fd27756c5d58b48ee6ad5bda0ec0.bindTooltip(
+                `<div>
+                     27. Ryuonji Temple (Kyoto) - Historic Buddhist temple with serene gardens.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bc45c15622047a73cfb051c642a2d43 = L.marker(
+                [35.7407, 139.7172],
+                {}
+            ).addTo(map_8278ce555d5cb1aae9826f9dd417574d);
+        
+    
+            var div_icon_2ff63d062157140a26f5827c4529ccb8 = L.divIcon({"className": "empty", "html": "\n                    \u003cdiv style=\"position: relative; text-align: center;\"\u003e\n                        \u003cdiv style=\"font-size: 18px; font-weight: bold; color: red; background-color: white; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px;\"\u003e28\u003c/div\u003e\n                    \u003c/div\u003e\n                "});
+            marker_9bc45c15622047a73cfb051c642a2d43.setIcon(div_icon_2ff63d062157140a26f5827c4529ccb8);
+        
+    
+        var popup_3582deb264e7d6ade74e7dfedd63e0d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08b5f32ed9679a9916874238debeeba4 = $(`<div id="html_08b5f32ed9679a9916874238debeeba4" style="width: 100.0%; height: 100.0%;">28. 3-chōme-15-15 Kamiikebukuro</div>`)[0];
+            popup_3582deb264e7d6ade74e7dfedd63e0d8.setContent(html_08b5f32ed9679a9916874238debeeba4);
+        
+
+        marker_9bc45c15622047a73cfb051c642a2d43.bindPopup(popup_3582deb264e7d6ade74e7dfedd63e0d8)
+        ;
+
+        
+    
+    
+            marker_9bc45c15622047a73cfb051c642a2d43.bindTooltip(
+                `<div>
+                     28. 3-chōme-15-15 Kamiikebukuro - Specific address in Toshima City, Tokyo.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
