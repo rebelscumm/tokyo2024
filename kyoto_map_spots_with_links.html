@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto Tourist Spots</title>
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <style>
+        /* Map container */
+        #map {
+            height: 90vh;
+            width: 100%;
+        }
+
+        /* Custom number icons */
+        .custom-icon {
+            background: white;
+            border-radius: 50%;
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>Kyoto Tourist Spots Map</h2>
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Map initialization
+        var map = L.map('map').setView([35.0116, 135.7681], 12); // Kyoto coordinates
+
+        // Load base tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // List of tourist spots with coordinates
+        const spots = [
+            { name: "Philosopher's Path", coords: [35.0236, 135.7953], description: "Scenic walkway lined with cherry trees and small temples." },
+            { name: "Nishiki Market", coords: [35.0046, 135.7612], description: "Bustling market street offering local food and crafts." },
+            { name: "Sagano Scenic Railway", coords: [35.0136, 135.6731], description: "Nostalgic train ride offering breathtaking views of the countryside." },
+            { name: "Tenryu-ji Temple", coords: [35.0167, 135.6722], description: "UNESCO World Heritage Zen temple with stunning gardens." },
+            { name: "Kyoto Tower", coords: [34.9855, 135.7586], description: "Modern tower offering panoramic views of Kyoto." },
+            { name: "Kyoto Imperial Palace", coords: [35.0254, 135.7626], description: "Former residence of the Japanese Imperial family." },
+            { name: "Byodo-in Temple", coords: [34.8894, 135.8117], description: "Striking Phoenix Hall featured on the 10 yen coin." },
+            { name: "Nijo Castle", coords: [35.0142, 135.7481], description: "17th-century shogunate palace with 'nightingale floors'." },
+            { name: "Higashiyama District", coords: [35.0037, 135.7787], description: "Traditional Kyoto streets with preserved architecture." },
+            { name: "Gion (Geisha District)", coords: [35.0038, 135.7751], description: "Historic district known for traditional teahouses and geisha culture." }
+        ];
+
+        // Add markers with numbers and popups
+        spots.forEach((spot, index) => {
+            var numberIcon = L.divIcon({
+                className: 'custom-icon',
+                html: index + 1,
+                iconSize: [40, 40],
+                iconAnchor: [20, 20]
+            });
+
+            L.marker(spot.coords, { icon: numberIcon })
+                .addTo(map)
+                .bindPopup(
+                    `<b>${index + 1}. ${spot.name}</b><br>${spot.description}<br>
+                     <a href="https://en.wikipedia.org/wiki/${spot.name.replace(/ /g, '_')}" target="_blank">Wikipedia</a><br>
+                     <a href="https://www.google.com/maps/search/${spot.name}" target="_blank">Google Maps (Search)</a><br>
+                     <a href="https://www.google.com/maps?q=${spot.coords[0]},${spot.coords[1]}" target="_blank">Google Maps (Coordinates)</a><br>
+                     <a href="https://en.wikivoyage.org/wiki/${spot.name.replace(/ /g, '_')}" target="_blank">Wikivoyage Search</a><br>
+                     <a href="https://www.tripadvisor.com/Search?q=${spot.name}" target="_blank">TripAdvisor Search</a><br>
+                     <a href="https://www.google.com/search?q=${spot.name}" target="_blank">Google Search</a>`
+                );
+        });
+    </script>
+</body>
+</html>
